@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body dir="rtl">
+    <style>
+    
+@font-face {
+  font-family: IRANSans;
+  font-weight: bold;
+  src: url("/assets/fonts/IranSans/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("/assets/fonts/IranSans/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/IranSans/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("/assets/fonts/IranSans/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("/assets/fonts/IranSans/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: IRANSans;
+  font-weight: normal;
+  src: url("/assets/fonts/IranSans/eot/IRANSansWeb(FaNum).eot");
+  src: url("/assets/fonts/IranSans/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/IranSans/woff2/IRANSansWeb(FaNum).woff2") format("woff2"),
+    url("/assets/fonts/IranSans/woff/IRANSansWeb(FaNum).woff") format("woff"),
+    url("/assets/fonts/IranSans/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+html, body, p, h1, h2, h3, h4, h5, h6, .fa-font {
+    font-family: IRANSans, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bolder !important;
+}
+
+h1 {
+    font-size: 2em !important;
+}
+h2 {
+    font-size: 1.5em !important;
+}
+h3 {
+    font-size: 1.17em !important;
+}
+h4 {
+    font-size: 1em !important;
+}
+h5 {
+    font-size: 0.83em !important;
+}
+h6 {
+    font-size: 0.67em !important;
+}
+              body {
+            direction: rtl;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 90px;
+            height: 110px;
+        }
+        .header div {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .table-container {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .green-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .green-button:hover {
+            background-color: #45a049;
+        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'IRANSans';
+
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.main-text {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.increase {
+    color: green;
+    font-weight: bold;
+}
+
+.decrease {
+    color: red;
+    font-weight: bold;
+}
+
+    @media print {
+        @page {
+            size: A3;
+        }
+
+        body {
+            background-color: #fff;
+            margin: 40;
+            padding: 0;
+            width: 100%;
+            height: 300mm;
+        }
+
+        .no-print {
+            display: none;
+        }
+
+        * {
+            -webkit-print-color-adjust: exact;
+        }
+
+        #print-container {
+            transform: scale(0.4);
+        }
+    }
+</style>
+  
+
+
+    <div class="container">
+        <div class="header">
+            <img src="kart.medu.ir_files/lqf12rft-402.png" alt="Logo">
+            <div>
+            <div style="text-align:center">
+                <h3>آزمون نهایی خرداد ماه ۱۴۰۳-۱۴۰۲</h3>
+            </div>
+
+            <div style="display:flex;flex-direction:row">
+            <div>
+                <p>نام و نام خانوادگی: مارال توكلي اناري</p>
+                <p>کد ملی: 0151115389</p>
+                <p>شماره دانش آموزی: 151115389</p>
+                <p>پایه: دوازدهم</p>
+            </div>
+            <div>
+            <p>کد واحد سازمانی: 95013148</p>
+            <p>نام واحد سازمانی:قدس</p>
+            <p>استان:اداره کل آموزش و پرورش شهر ,تهران</p>
+            <p>منطقه:اداره آموزش و پرورش ناحیه تهران .منطقه 8</p>
+            </div>
+            </div>
+            </div>
+            <img src="kart.medu.ir_files/151115389.png" alt="Logo">
+        </div>
+        
+        <div class="table-container">
+           <table>
+                    <thead>
+                        <tr>
+                            <th>نام درس</th>
+                            <th>کد درس</th>
+                            <th>تعداد صفحات پاسخ برگ</th>
+                            <th>نمره مستمر 1</th>
+                            <th>نمره پایانی ۱</th>
+                            <th>نمره مستمر 2</th>
+                            <th>نمره پایانی ۲</th>
+                            <th>نمره سال</th>
+                            <th>وضعیت قبولی</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    <tr>
+                        <td>علوم اجتماعي</td>
+                        <td>12141</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>18</td>
+                        <td>19.5</td>
+                        <td>9</td>
+                        <td>14</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>عربي، زبان قرآن3</td>
+                        <td>12021</td>
+                        <td>2</td>
+                        <td>17</td>
+                        <td>15.25</td>
+                        <td>18.5</td>
+                        <td>6</td>
+                        <td>11.25</td>
+                        <td>مردود</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>شيمي 3</td>
+                        <td>12111</td>
+                        <td>3</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>16</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>فيزيك 3</td>
+                        <td>12101</td>
+                        <td>4</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td>17</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>مردود</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>حسابان 2</td>
+                        <td>12061</td>
+                        <td>5</td>
+                        <td>14</td>
+                        <td>13</td>
+                        <td>16</td>
+                        <td>1.5</td>
+                        <td>7.75</td>
+                        <td>مردود</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>سلامت و بهداشت</td>
+                        <td>12121</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>17</td>
+                        <td>20</td>
+                        <td>8.75</td>
+                        <td>13.75</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>تعليمات ديني (ديني، اخلاق و قرآن) 3</td>
+                        <td>12011</td>
+                        <td>3</td>
+                        <td>19</td>
+                        <td>13</td>
+                        <td>18</td>
+                        <td>14.75</td>
+                        <td>15.25</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>رياضيات گسسته</td>
+                        <td>12071</td>
+                        <td>4</td>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>16</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>مردود</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>فارسي 3</td>
+                        <td>12031</td>
+                        <td>4</td>
+                        <td>17</td>
+                        <td>14</td>
+                        <td>20</td>
+                        <td>7.5</td>
+                        <td>12</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>هندسه 3</td>
+                        <td>12051</td>
+                        <td>4</td>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>16</td>
+                        <td>1.25</td>
+                        <td>7.75</td>
+                        <td>مردود</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>زبان خارجي3</td>
+                        <td>12081</td>
+                        <td>2</td>
+                        <td>16</td>
+                        <td>14.25</td>
+                        <td>18</td>
+                        <td>11</td>
+                        <td>13.5</td>
+                        <td>قبول</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+        </div>
+         <div class="container brz-margin-t-10px brz-margin-b-10px">
+                <div class="highlight">لازم هست قبل از ثبت هرگونه درخواست، به موارد زیر توجه شود:</div>
+                <div class="main-text">
+                    درخواست رسیدگی مجدد صرفا یکبار برای هر درس امکان پذیر میباشد .
+          <br>
+          نتیجه بررسی مجدد پاسخ‌برگ‌ها ممکن است <span class="underline">بدون تغییر</span> در نمره یا <span class="increase">افزایش</span> یا <span class="decrease">کاهش</span> باشد.
+          <br>
+          برای ثبت درخواست بررسی مجدد بر روی ثبت درخواست  کلیک نمایید.
+          <br>
+          تعداد صفحات پاسخبرگی که در جلسه آزمون دریافت کرده‌اید،به تفکیک
+ درس در ستون «تعداد صفحات پاسخبرگ» مشخص شده است. در صورت مشاهده مغایرت، 
+در زمان ثبت اعتراض  گزینه «<span class="underline">تعداد صفحات پاسخبرگ</span>» را انتخاب نمایید.
+        </div>
+                <h5 class="brz-tac">چاپ این برگه فاقد هرگونه اعتبار قانونی می باشد</h5>
+
+            </div>
+                <a href="#" id="sendData" class="green-button">چاپ کارنامه</a>
+                <a href="https://dana.medu.ir/core-api/v1/data-provider/g/dana-medu--objection-login-report-card/dana.medu.ir?code=MTIzODU2Nzg5MDEyMzQ1Ng:lyIqbUY-nf6o1t6Zs73eiiPncAXoKnHzVCk66b3XbBqzw3Svg0KsHxfUHo66A0ZKNMTANO9Dod1CgGVmTdsL0w" class="green-button">ثبت اعتراضات</a>
+    </div>
+
+
+
+                <script>
+                    document.getElementById('sendData').addEventListener('click', function() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://kart.medu.ir/core-api/v1/data-provider/store-form-data', true);
+      xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+ const formId = 'finalMedu/print/cart/log';
+            const data = {
+                        user: 'undefined',
+                actionName: 'final-print-karname',
+                desc: 'چاپ کارنامه امتحان نهایی'
+            };
+      xhr.onload = function() {
+                    };
+
+      xhr.onerror = function() {
+                        console.error('There was a network error.');
+      };
+
+      var dataForSend = JSON.stringify({formId, data, serviceId:'kart.medu.ir'});
+      xhr.send(dataForSend);
+      document.title ='چاپ کارنامه امتحان نهایی';
+      window.print();
+    });
+  </script>
+
+            
+
+</body></html>
